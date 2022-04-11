@@ -1,0 +1,47 @@
+Here I have worked on different systems.
+Like Partner Portal, Partner Mobility, BPM, DMS.
+
+i am going to explain end to end journey how system is working and communicate with each other.
+
+
+Here on top we have some Partner Mobility and Partner Portal from which data will flow using ESB (Enterprise bus) to CRM and BPM.
+
+
+PP (Partner Portal) is web based solution which can used by any browser to help agents  
+
+and 
+
+PM(Partner Mobility) is mobile based solution which are helping there agents to connect with their real time system and also will help to avoid paper work. This app you can use offline and online in both the day.
+
+PP and PM both the journey going through from different stage. like :-
+
+Lead Creation:- In Lead creation you will feed basic data of client like personal information DOB, Gender  
+
+
+Product Recommendation:- In this section you will get product recommendation based on your need like, if you want education function than under product recommendation section you will get "Edu Save" product as recommendation.
+
+
+If your need is retirement than you will get "Pension Plan" , "Easy Pension" and "Annuity" etc.
+
+Benefit Illustration Creation :- After selection product from recommendation screen in this section you can generate Benefit Illustration based on  your needs like , Sum Assured, Policy Term, Premium Paying Frequency, Sum Assured etc.
+
+Here you can generate BI as per your need, after confirmation from user/client you can confirm same BI and Move ahead to other stages.
+
+App Form Journey:- After BI confirmation you will redirect to App form journey where you have to fill information about user like:-
+i-Personal Information - Address, Education and Employment.
+ii- Medical Details
+iii- Insurance History
+iv- Life Sytle Details etc.
+v- Documents - In this section you will get list of documents based on your inputs like - age, sum assured and medical and non medical questionnaire which you answered    during the journey. This section will hit ODM engine which is rule engine, based set of rules which are written ODM, Agents will come to know what document he/she    will have to collect from user. Same time he can collect and upload in PP/PM.
+Payment- PM/PP supporting different kind of payment system like Online(BillDesk) and Offline(Cash, Cheque and DD).
+Once you completed the PP and PM journey than case will go to BPM for Quality Check.
+
+
+
+BPM Quality Check :- Here QC person will validate customer data with Application form which is submitted from Partner Portal and Partner Mobility. Here also BPM will hit the ODM. Based on inputs ODM will generate set of requirement (Medical and Non Medical) and failure reasons (Like if customer is NRI customer or customer BMI is not satisfying criteria written in ODM). If case is pass than QC directly issue the policy after receiving all non medical documents from branch. If case is fail than case will go to UW for further processing.
+
+Once case is submitted from BPM with open requirement, case will go to Employee Portal for requirement fullfilment, Employee Portal used by BOE, BOE will contact client/user for additional requirement, once requirement got fulfilled by BOE than task will created for QC or UW for final submittion or policy issuance.
+
+Once decision submitted by UW user policy will be issued in Ingenium, ingenium is another system where all financial and client related information getting store.
+
+

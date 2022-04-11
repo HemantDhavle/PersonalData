@@ -1,0 +1,35 @@
+Factory->
+DriverFactor->
+init_driver
+init_property->
+OptionManager->Constructor(prop)
+
+Utility->
+elementUtils->constructor(driver)
+jsUtils->constructor(driver)
+excelUtils->
+Constants->
+
+Pages->
+LoginPage->Contructor(Webdriver)
+elementUtis
+js utils
+Locators, Methods(Generic method)
+
+Test->
+baseTest (DriverFactory, PageObject)
+testClass extends baseTest
+
+Listener->
+Retry
+AnnotationTransfor
+Allure
+ExtentReport
+
+Resource->
+config->confi.properties
+testData->excelsheet
+testRunner- testNG.xml
+
+pom.xml
+.gitignore
