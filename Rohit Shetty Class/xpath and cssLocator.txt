@@ -1,0 +1,9 @@
+xpath-
+//tagName[@attributeName='value']
+RE- //tagName[contains(@attributeName, 'value')]
+
+cssSelector-
+tagName[attributeName='value']
+css-tagName#id
+tagName.className
+RE- tagName[attributeName*='value']
